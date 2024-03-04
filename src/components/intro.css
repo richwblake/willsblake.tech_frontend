@@ -1,0 +1,26 @@
+.intro {
+    margin: 0 auto;
+    text-align: center;
+    background: #054A91;
+    color: #59F8E8;
+    padding: 1rem 0;
+}
+
+.intro h5 {
+    margin: 0.8rem 0;
+}
+
+.photo {
+    height: auto;
+    max-width: 30%;
+    border-radius: 50%;
+    border: 2px solid #59F8E8;
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+      .photo {
+          max-width: 60%;
+      }
+  }
+}

@@ -1,0 +1,13 @@
+.about {
+    margin: 0 auto;
+    padding: 1rem;
+    background: #59F8E8;
+    text-align: center;
+    color: #3C493F;
+}
+
+.about-text {
+    width: 70%;
+    font-size: 1.3rem;
+    margin: 0 auto;
+}

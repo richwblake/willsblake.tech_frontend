@@ -1,0 +1,18 @@
+.project-items {
+    display: flex;
+    padding: 1rem;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project-list {
+    background: #3C493F;
+    padding: 1rem 0;
+    color: #59F8E8;
+}
+
+.project-list h1 {
+    text-align: center;
+}
+
