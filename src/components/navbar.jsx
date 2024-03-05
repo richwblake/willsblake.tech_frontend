@@ -7,9 +7,9 @@ export default function NavBar() {
                 <span>willsblake.tech</span>
             </div>
             <div className="lato nav-links">
-                <span><a href="#">projects</a></span>
-                <span><a href="#">work</a></span>
-                <span><a href="#">contact</a></span>
+                <span><a href="#work-list">work</a></span>
+                <span><a href="#project-list">projects</a></span>
+                <span><a href="#contact-form">contact</a></span>
             </div>
         </div>
     );

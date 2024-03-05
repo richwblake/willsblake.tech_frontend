@@ -1,0 +1,55 @@
+.contact {
+    background: #59F8E8;
+    padding: 1rem;
+}
+
+.contact-form {
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+.contact-form textarea {
+    height: 100px;
+    resize: none;
+    border: 1px solid #3C493F;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    width: 40%;
+    margin: 0 auto;
+    border: 0;
+    background: #3C493F;
+    color: #59F8E8;
+    padding: 0.3rem;
+    border-radius: 5px;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem 0;
+}
+
+.form-input label {
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+.form-input input {
+    border: 1px solid #3C493F;
+    border-radius: 5px;
+}
+
+.contact h1 {
+    text-align: center;
+}
+
+.name-email {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+}

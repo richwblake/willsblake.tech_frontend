@@ -1,0 +1,12 @@
+.work-item h2 {
+    text-decoration: underline;
+}
+
+.work-item li {
+    padding: 3px;
+}
+
+.work-item {
+    margin: 2rem 0;
+}
+

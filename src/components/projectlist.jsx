@@ -32,8 +32,8 @@ export default function ProjectList() {
         ]
 
     return (
-        <div className='project-list'>
-            <h1 className="lato">Current Projects</h1>
+        <div className='project-list' id='project-list'>
+            <h1 className="lato">What I'm Working On</h1>
             <div className="lato-regular project-items">
                 {projects.map(project => <Project key={project.id} project={project} />)}
             </div>
