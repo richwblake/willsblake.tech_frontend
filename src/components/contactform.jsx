@@ -22,7 +22,11 @@ export default function ContactForm() {
             body: JSON.stringify(formData),
         };
 
+        setSentMessage(prev => !prev);
+
         await fetch('http://localhost:5555/messages', postObj);
+
+
     };
 
     const updateFormData = (e) => {
