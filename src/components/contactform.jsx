@@ -9,8 +9,20 @@ export default function ContactForm() {
         content: "",
     });
 
-    const handleSubmit = (e) => {
-        
+    const [sentMessage, setSentMessage] = useState(false);
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        const postObj = {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(formData),
+        };
+
+        await fetch('http://localhost:5555/messages', postObj);
     };
 
     const updateFormData = (e) => {
@@ -23,7 +35,7 @@ export default function ContactForm() {
     return (
         <div className='contact' id='contact-form'>
             <h1 className='lato'>Let's Get in Touch</h1>
-            <form className='lato-regular contact-form' onSubmit={handleSubmit}>
+            <form className={`lato-regular contact-form ${sentMessage ? 'hidden' : ''}`} onSubmit={handleSubmit}>
                 <div className='name-email'>
                     <div className='form-input'>
                         <label htmlFor='full-name'>Name</label>
@@ -42,6 +54,7 @@ export default function ContactForm() {
                     <button className='submit-btn' type='submit'>Submit</button>
                 </div>
             </form>
+            <h3 className={`lato success-message ${sentMessage ? '' : 'hidden'}`}>Your message has been sent. I'll get back to you within a day or two. Thanks for reaching out!</h3>
         </div>
     );
 }
