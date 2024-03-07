@@ -16,3 +16,12 @@
     text-align: center;
 }
 
+@media only screen and (min-width: 1000px) {
+    body {
+        .project-items {
+            width: 50%;
+            margin: 0 auto;
+        }
+    }
+}
+

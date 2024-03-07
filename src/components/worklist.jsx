@@ -44,7 +44,9 @@ export default function WorkList() {
     return (
         <div className='work-list' id='work-list'>
             <h1 className='lato'>Where I've Worked</h1>
-            {workItems.map(item => <WorkItem key={item.id} details={item} />)}
+            <div className='work-items'>
+                {workItems.map(item => <WorkItem key={item.id} details={item} />)}
+            </div>
         </div>
     );
 }
