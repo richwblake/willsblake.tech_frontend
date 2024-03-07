@@ -12,7 +12,7 @@
 
 .photo {
     height: auto;
-    max-width: 30%;
+    max-width: 25%;
     border-radius: 50%;
     border: 2px solid #59F8E8;
 }
@@ -20,7 +20,7 @@
 @media only screen and (max-width: 1000px) {
     body {
         .photo {
-            max-width: 60%;
+            max-width: 50%;
         }
 
         .intro-text-dt {
@@ -38,7 +38,7 @@
         .intro {
             display: flex;
             align-items: center;
-            justify-content: space-around;
+            justify-content: space-evenly;
         }
 
         .intro-text-dt {
@@ -47,7 +47,8 @@
 
         .intro-text-mb {
             display: block;
-            width: 40%;
+            width: 30%;
+            line-height: 1.8rem;
         }
     }
 }
