@@ -24,7 +24,7 @@ export default function ContactForm() {
 
         setSentMessage(prev => !prev);
 
-        await fetch('https://willsblake.tech/api/messages', postObj);
+        await fetch('https://www.willsblake.tech/api/messages', postObj);
 
 
     };
